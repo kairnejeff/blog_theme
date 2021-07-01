@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+
+#ignorer ces fichiers
+/web/node_modules
