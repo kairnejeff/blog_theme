@@ -2,7 +2,7 @@ let path = require('path');
 
 let MiniCssExtractPlugin = require('mini-css-extract-plugin');
 let CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-
+const webpack = require('webpack');
 
 // development production
 module.exports = {
@@ -14,6 +14,12 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            "window.$": "jquery"
+        }),
         new MiniCssExtractPlugin({
             filename: "../css/kj.css",
         })
@@ -76,5 +82,7 @@ module.exports = {
             new CssMinimizerPlugin(),
         ],
     },
-
+    externals: {
+        "jquery": "jQuery"
+    }
 }

@@ -142,7 +142,7 @@ function kj_add_js() {
 	    'add-to-cart' => $url . '/web/js/kj.js',
 	);
      foreach( $styles as $k => $v ){
-        wp_enqueue_script($k,$v,array('jquery'),true);
+        wp_enqueue_script($k,$v,array('jquery'),true,true);
         wp_localize_script($k,'url',$url);
     } 
     
