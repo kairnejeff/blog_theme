@@ -27,7 +27,6 @@
     #header .header-nav .row .navigation-header #_desktop_logo {
         margin-top: -2em;
     }
-
     #header .header-nav .row .header-bottom {
         width: 100%;
         padding: 0;
@@ -480,12 +479,6 @@
     font-style: italic;
     font-family: "AlegreyaSans";
     font-size: 12px;
-}
-
-#footer .container .block_newsletter {
-    position: absolute;
-    right: 0;
-    bottom: 0;
 }
 
 @media only screen and (min-device-width: 993px) and (max-device-width: 1025px) {

@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_theme_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css/theme.css */ \"./css/theme.css\");\n/* harmony import */ var _css_custom_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/custom.css */ \"./css/custom.css\");\n/* harmony import */ var _css_popnewsletter_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/popnewsletter.css */ \"./css/popnewsletter.css\");\n/* harmony import */ var _css_carousel_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/carousel.css */ \"./css/carousel.css\");\n/* harmony import */ var _css_owl_carousel_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/owl.carousel.min.css */ \"./css/owl.carousel.min.css\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../js/owl.carousel.min.js */ \"./js/owl.carousel.min.js\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../js/owl-carousel.js */ \"./js/owl-carousel.js\");\n/* harmony import */ var _js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://web/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_theme_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css/theme.css */ \"./css/theme.css\");\n/* harmony import */ var _css_homepage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/homepage.css */ \"./css/homepage.css\");\n/* harmony import */ var _css_custom_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/custom.css */ \"./css/custom.css\");\n/* harmony import */ var _css_popnewsletter_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/popnewsletter.css */ \"./css/popnewsletter.css\");\n/* harmony import */ var _css_carousel_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/carousel.css */ \"./css/carousel.css\");\n/* harmony import */ var _css_owl_carousel_min_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../css/owl.carousel.min.css */ \"./css/owl.carousel.min.css\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../js/owl.carousel.min.js */ \"./js/owl.carousel.min.js\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../js/owl-carousel.js */ \"./js/owl-carousel.js\");\n/* harmony import */ var _js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_7__);\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://web/./index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
   \****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"jquery\");\n$(function () {\n  $('.mhn-slide').owlCarousel({\n    nav: true,\n    //loop:true,\n    slideBy: 'page',\n    rewind: false,\n    responsive: {\n      0: {\n        items: 1\n      },\n      480: {\n        items: 2\n      },\n      600: {\n        items: 3\n      },\n      1000: {\n        items: 4\n      }\n    },\n    smartSpeed: 70,\n    navText: ['<svg viewBox=\"0 0 24 24\"><path d=\"M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z\"></path></svg>', '<svg viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"></path></svg>']\n  });\n});\n\n//# sourceURL=webpack://web/./js/owl-carousel.js?");
+eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"jquery\");\n$(function () {\n  $('.kj-slide').owlCarousel({\n    nav: true,\n    //loop:true,\n    margin: 40,\n    slideBy: 'page',\n    rewind: false,\n    responsive: {\n      0: {\n        items: 1\n      },\n      480: {\n        items: 2\n      },\n      600: {\n        items: 3\n      },\n      1000: {\n        items: 3\n      }\n    },\n    smartSpeed: 70,\n    navText: ['<svg viewBox=\"0 0 24 24\"><path d=\"M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z\"></path></svg>', '<svg viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"></path></svg>']\n  });\n  $('.kj-slide .owl-item').mouseover(function () {\n    $(this).find(\".slide-img\").addClass(\"hover\");\n    $(this).find(\".slide-text\").addClass(\"hover\");\n  });\n  $('.kj-slide .owl-item').mouseout(function () {\n    $(this).find(\".slide-img\").removeClass(\"hover\");\n    $(this).find(\".slide-text\").removeClass(\"hover\");\n  });\n});\n\n//# sourceURL=webpack://web/./js/owl-carousel.js?");
 
 /***/ }),
 
@@ -59,6 +59,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://web/./css/custom.css?");
+
+/***/ }),
+
+/***/ "./css/homepage.css":
+/*!**************************!*\
+  !*** ./css/homepage.css ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://web/./css/homepage.css?");
 
 /***/ }),
 

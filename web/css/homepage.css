@@ -1,0 +1,53 @@
+h1 {
+    font-size: 40px;
+    line-height: 56px;
+}
+
+.font-roboto {
+    font-family: 'RobotoMono';
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.container.home-page-block {
+    margin-bottom: 3rem;
+}
+
+.home-page-block h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.header-nav .container {
+    width: 100%;
+}
+
+.header-image .card {
+    position: relative;
+}
+
+.header-image .card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.header-image img {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .header-image img {
+        max-height: 493.61px;
+        object-fit: cover;
+    }
+}
