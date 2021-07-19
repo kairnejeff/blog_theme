@@ -27,11 +27,6 @@
     #header .header-nav .row .navigation-header #_desktop_logo {
         margin-top: -2em;
     }
-    #header .header-nav .row .header-bottom {
-        width: 100%;
-        padding: 0;
-        position: relative;
-    }
     #header .header-nav .row .header-bottom #search_widget {
         position: absolute;
         top: -95px;

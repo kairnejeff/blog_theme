@@ -4,11 +4,11 @@
             <div class="header-image">
                 <?php
                  $args = array(
-                    'ID' => 23 ,
+                    'ID' => 20 ,
                     'post_type'        => 'carrousel',
                 );
                 $carrousel = get_posts($args);
-                $acfInfo = get_field('carrousel_image', '23');
+                $acfInfo = get_field('carrousel_image', '20');
                 if( $acfInfo ): ?>
                     <div class="card">
                         <div class="content">
@@ -40,7 +40,7 @@
                             echo "<div class='slide-image-wrapper'><img src=\"$image[0]\" class='slide-img'></div>";
                         }
                         echo "<div class='slide-text'>";
-                        echo "<h3 class='category-title'>".'<a href="' . get_post_permalink( $post->ID ) . '">'.$post->post_title."</a></h3>";
+                        echo '<a href="' . get_post_permalink( $post->ID ) . '"><h3 class="category-title">'.$post->post_title."</h3></a>";
                         
                         if ($lecture=get_field('temps_lecture', 'post_'.$post->ID)) {
                             if($lecture==1){
@@ -83,7 +83,7 @@
                         echo "<div class='slide-image-wrapper'><img src=\"$image[0]\" class='slide-img'></div>";
                     }
                     echo "<div class='slide-text'>";
-                    echo "<h3 class='category-title'>".'<a href="' . get_post_permalink( $post->ID ) . '">'.$post->post_title."</a></h3>";
+                    echo '<a href="' . get_post_permalink( $post->ID ) . '"><h3 class="category-title">'.$post->post_title."</h3></a>";
                     
                     if ($lecture=get_field('temps_lecture', 'post_'.$post->ID)) {
                         if($lecture==1){

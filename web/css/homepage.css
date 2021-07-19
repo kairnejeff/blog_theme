@@ -15,7 +15,8 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.home-page-block h2 {
+.home-page-block h2,
+.block-title h2 {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 2rem;

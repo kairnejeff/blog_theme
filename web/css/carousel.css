@@ -309,7 +309,7 @@ body {
     text-align: center;
 }
 
-.kj-slide .owl-item .slide-item .slide-text.hover h3 a {
+.kj-slide .owl-item .slide-item .slide-text.hover a h3 {
     color: white;
 }
 
