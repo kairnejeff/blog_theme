@@ -7,7 +7,7 @@
                     'post_type'        => 'carrousel',
                 );
                 $carrousel = get_posts($args);
-                $acfInfo = get_field('carrousel_image', '20');
+                $acfInfo = get_field('carrousel_image', $carrousel[0]->ID);
                 if( $acfInfo ): ?>
                     <div class="card">
                         <div class="content">
