@@ -4,7 +4,6 @@
             <div class="header-image">
                 <?php
                  $args = array(
-                    'ID' => 20 ,
                     'post_type'        => 'carrousel',
                 );
                 $carrousel = get_posts($args);
