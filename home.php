@@ -14,7 +14,11 @@
                             <?php echo $acfInfo['description']; ?>
                         </div>
                         <?php if( $acfInfo['media']['type'] =='image' ): ?>
-                        <img src="<?php echo esc_url( $acfInfo['media']['url'] ); ?>" alt="<?php echo esc_attr( $acfInfo['media']['alt'] ); ?>" class="carousel-img"/>
+                        <img src="<?php echo $acfInfo['media']['sizes']['large'] ; ?>" 
+                            srcset="<?php echo $acfInfo['media']['sizes']['large'] ; ?> 320w,
+                                    <?php echo $acfInfo['media']['sizes']['medium'] ; ?> 300w,
+                                    <?php echo $acfInfo['media']['sizes']['thumbnail'] ; ?> 150w"
+                             alt="<?php echo esc_attr( $acfInfo['media']['alt'] ); ?>" class="carousel-img"/>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
@@ -35,7 +39,7 @@
                     foreach($p as  $post){
                         echo "<div class='slide-item recent-posts'>";
                         if (has_post_thumbnail( $post->ID ) ){
-                            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),'large');
                             echo "<div class='slide-image-wrapper'><img src=\"$image[0]\" class='slide-img'></div>";
                         }
                         echo "<div class='slide-text'>";

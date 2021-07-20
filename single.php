@@ -7,7 +7,7 @@
             <h1 class='page-title'><?php echo $post->post_title ;?></h1>
             <?php 
             if (has_post_thumbnail( $post->ID ) ){
-                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
                 echo "<img src=\"$image[0]\" class='history-img'>";
             }
             ?>
@@ -30,7 +30,7 @@
         <?php foreach( $histories as $history ):  ?>
             
         <div class="related-history slide-item recent-posts">
-        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $history->ID ), 'single-post-thumbnail' );?>
+        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $history->ID ), 'large' );?>
            <div class="slide-image-wrapper">
                <img src="<?php echo $image[0]; ?>" class='slide-img'>
             </div>
