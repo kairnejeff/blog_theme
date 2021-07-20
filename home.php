@@ -14,11 +14,19 @@
                             <?php echo $acfInfo['description']; ?>
                         </div>
                         <?php if( $acfInfo['media']['type'] =='image' ): ?>
-                        <img src="<?php echo $acfInfo['media']['sizes']['large'] ; ?>" 
-                            srcset="<?php echo $acfInfo['media']['sizes']['large'] ; ?> 320w,
-                                    <?php echo $acfInfo['media']['sizes']['medium'] ; ?> 300w,
-                                    <?php echo $acfInfo['media']['sizes']['thumbnail'] ; ?> 150w"
-                             alt="<?php echo esc_attr( $acfInfo['media']['alt'] ); ?>" class="carousel-img"/>
+                            <?php 
+                            $url =str_replace("/uploads","/webp-express/webp-images/uploads",$acfInfo['media']['sizes']['large']);
+                            ?>
+                        <figure>
+                            <picture>
+                                 <source srcset="<?php echo $url.".webp"; ?>" alt="<?php echo esc_attr( $acfInfo['media']['alt'] ); ?>" type="image/webp" >
+                                 <img src="<?php echo $acfInfo['media']['sizes']['large'] ; ?>" 
+                                    srcset="<?php echo $acfInfo['media']['sizes']['large'] ; ?> 320w,
+                                            <?php echo $acfInfo['media']['sizes']['medium'] ; ?> 300w,
+                                            <?php echo $acfInfo['media']['sizes']['thumbnail'] ; ?> 150w"
+                                    alt="<?php echo esc_attr( $acfInfo['media']['alt'] ); ?>" class="carousel-img"/>
+                            </picture>
+                        </figure>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
@@ -40,7 +48,12 @@
                         echo "<div class='slide-item recent-posts'>";
                         if (has_post_thumbnail( $post->ID ) ){
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),'large');
-                            echo "<div class='slide-image-wrapper'><img src=\"$image[0]\" class='slide-img'></div>";
+                            $url =str_replace("/uploads","/webp-express/webp-images/uploads",$image[0]);
+                            $webp=$url.".webp";
+                            echo "<div class='slide-image-wrapper'><figure><picture>";
+                            echo "<source srcset=\"$webp\"  type='image/webp'>";
+                            echo "<img src='\"$image[0]\"' class='slide-img'>";
+                            echo "</picture></figure></div>";
                         }
                         echo "<div class='slide-text'>";
                         echo '<a href="' . get_post_permalink( $post->ID ) . '"><h3 class="category-title">'.$post->post_title."</h3></a>";
@@ -83,7 +96,12 @@
                     echo "<div class='slide-item recent-posts'>";
                     if (has_post_thumbnail( $post->ID ) ){
                         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                        echo "<div class='slide-image-wrapper'><img src=\"$image[0]\" class='slide-img'></div>";
+                        $url =str_replace("/uploads","/webp-express/webp-images/uploads",$image[0]);
+                        $webp=$url.".webp";
+                        echo "<div class='slide-image-wrapper'><figure><picture>";
+                        echo "<source srcset=\"$webp\"  type='image/webp'>";
+                        echo "<img src='\"$image[0]\"' class='slide-img'>";
+                        echo "</picture></figure></div>";
                     }
                     echo "<div class='slide-text'>";
                     echo '<a href="' . get_post_permalink( $post->ID ) . '"><h3 class="category-title">'.$post->post_title."</h3></a>";

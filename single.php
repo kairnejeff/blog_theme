@@ -8,7 +8,12 @@
             <?php 
             if (has_post_thumbnail( $post->ID ) ){
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
-                echo "<img src=\"$image[0]\" class='history-img'>";
+                $url =str_replace("/uploads","/webp-express/webp-images/uploads",$image[0]);
+                $webp=$url.".webp";
+                echo "<div class='slide-image-wrapper'><figure><picture>";
+                echo "<source srcset=\"$webp\"  type='image/webp'>";
+                echo "<img src='\"$image[0]\"' class='slide-img'>";
+                echo "</picture></figure></div>";
             }
             ?>
         
@@ -31,9 +36,14 @@
             
         <div class="related-history slide-item recent-posts">
         <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $history->ID ), 'large' );?>
-           <div class="slide-image-wrapper">
-               <img src="<?php echo $image[0]; ?>" class='slide-img'>
-            </div>
+            <?php
+                $url =str_replace("/uploads","/webp-express/webp-images/uploads",$image[0]);
+                $webp=$url.".webp";
+                echo "<div class='slide-image-wrapper'><figure><picture>";
+                echo "<source srcset=\"$webp\"  type='image/webp'>";
+                echo "<img src='\"$image[0]\"' class='slide-img'>";
+                echo "</picture></figure></div>";
+            ?>
             <div class="slide-text">
                 <a href="<?php echo get_post_permalink( $history->ID ); ?>"> 
                     <h3 class='category-title'>
