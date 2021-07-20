@@ -21,7 +21,11 @@
     </div>
 
     <div class="container content">
-        <?php echo $post->post_content ?>
+        <div class="row align-center">
+            <div class="col-md-8 offset-md-2 text-justify">
+                <?php echo $post->post_content ?>
+            </div>
+        </div>
     </div>
 
     
