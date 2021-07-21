@@ -18,3 +18,17 @@
     margin-top: 2rem;
     margin-bottom: 6em;
 }
+
+#content {
+    font-size: 21px;
+    line-height: 24px;
+}
+
+#content h2,
+#content h3 {
+    font-family: 'RobotoMono';
+    font-size: 18px;
+    line-height: 1.8px;
+    text-align: center;
+    font-weight: 600;
+}
