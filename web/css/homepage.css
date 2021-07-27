@@ -52,3 +52,7 @@ h1 {
         object-fit: cover;
     }
 }
+
+#footer .blockreassurance .block-title {
+    text-align: center;
+}

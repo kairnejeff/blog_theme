@@ -1,12 +1,5 @@
 .top-menu .sub-menu.collapse {
-    display: none;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1190px;
-        position: relative;
-    }
+    display: inherit;
 }
 
 @media (min-width: 1200px) {
@@ -16,7 +9,7 @@
     }
     #header .header-nav .row {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         border-bottom: 1px solid #000;
     }
     #header .header-nav .row .navigation-header {
@@ -27,34 +20,15 @@
     #header .header-nav .row .navigation-header #_desktop_logo {
         margin-top: -2em;
     }
+    /* #header .header-nav .row .header-bottom {
+        width: 100%;
+        padding: 0;
+        position: relative;
+    } */
     #header .header-nav .row .header-bottom #search_widget {
         position: absolute;
         top: -95px;
         right: 30%;
-    }
-    #header .header-nav .row #_desktop_top_menu {
-        width: 100%;
-        padding: 0 20px;
-    }
-    #header .header-nav .row #_desktop_top_menu ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    #header .header-nav .row #_desktop_top_menu ul li {
-        font-family: "AlegreyaSans";
-        font-size: 16px;
-    }
-    #header .header-nav .row #_desktop_top_menu ul li:not(:last-child) {
-        margin-right: 10px;
-        display: block;
-    }
-    #header .header-nav .row #_desktop_top_menu ul li a {
-        text-transform: none;
-        letter-spacing: 0.5px;
-        padding: 0;
-        font-weight: 400;
-        font-family: "AlegreyaSans";
-        font-size: 16px;
     }
 }
 
@@ -458,10 +432,6 @@
     }
 }
 
-#footer .blockreassurance {
-    text-align: center;
-}
-
 @media only screen and (min-device-width: 993px) and (max-device-width: 1025px) {
     #footer .container .block_newsletter {
         bottom: 65px;
@@ -483,11 +453,6 @@
     #footer .row .text-sm-center {
         margin-top: 20px;
     }
-}
-
-#footer .row .text-sm-center a {
-    display: block;
-    text-align: center;
 }
 
 #custom-categories-container {
@@ -557,18 +522,6 @@
 .block-category {
     position: relative;
     padding: unset;
-}
-
-.block-category .h1 {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: #FFFFFF;
 }
 
 .grid-controle .grid-button {
@@ -733,7 +686,6 @@
 }
 
 #search_filters #filtre-name {
-    text-align: center;
     font-size: 1.2em;
 }
 

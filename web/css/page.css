@@ -10,6 +10,13 @@
     color: #FFFFFF;
 }
 
+.h1,
+.page-header h1,
+.page-title {
+    font-size: 50px;
+    line-height: 55px;
+}
+
 .page .header-image img {
     max-height: 293.95px;
 }
@@ -30,5 +37,6 @@
     font-size: 18px;
     line-height: 1.8px;
     text-align: center;
-    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
