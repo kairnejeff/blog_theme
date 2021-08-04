@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_theme_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css/theme.css */ \"./css/theme.css\");\n/* harmony import */ var _css_homepage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/homepage.css */ \"./css/homepage.css\");\n/* harmony import */ var _css_custom_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/custom.css */ \"./css/custom.css\");\n/* harmony import */ var _css_popnewsletter_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/popnewsletter.css */ \"./css/popnewsletter.css\");\n/* harmony import */ var _css_carousel_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/carousel.css */ \"./css/carousel.css\");\n/* harmony import */ var _css_page_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../css/page.css */ \"./css/page.css\");\n/* harmony import */ var _css_owl_carousel_min_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../css/owl.carousel.min.css */ \"./css/owl.carousel.min.css\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../js/owl.carousel.min.js */ \"./js/owl.carousel.min.js\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../js/owl-carousel.js */ \"./js/owl-carousel.js\");\n/* harmony import */ var _js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _js_megamenu_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../js/megamenu.js */ \"./js/megamenu.js\");\n/* harmony import */ var _js_megamenu_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_js_megamenu_js__WEBPACK_IMPORTED_MODULE_9__);\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://web/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_homepage_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css/homepage.css */ \"./css/homepage.css\");\n/* harmony import */ var _css_popnewsletter_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/popnewsletter.css */ \"./css/popnewsletter.css\");\n/* harmony import */ var _css_carousel_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/carousel.css */ \"./css/carousel.css\");\n/* harmony import */ var _css_page_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/page.css */ \"./css/page.css\");\n/* harmony import */ var _css_owl_carousel_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/owl.carousel.min.css */ \"./css/owl.carousel.min.css\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../js/owl.carousel.min.js */ \"./js/owl.carousel.min.js\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../js/owl-carousel.js */ \"./js/owl-carousel.js\");\n/* harmony import */ var _js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _js_megamenu_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../js/megamenu.js */ \"./js/megamenu.js\");\n/* harmony import */ var _js_megamenu_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_megamenu_js__WEBPACK_IMPORTED_MODULE_7__);\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://web/./index.js?");
 
 /***/ }),
 
@@ -61,17 +61,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./css/custom.css":
-/*!************************!*\
-  !*** ./css/custom.css ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://web/./css/custom.css?");
-
-/***/ }),
-
 /***/ "./css/homepage.css":
 /*!**************************!*\
   !*** ./css/homepage.css ***!
@@ -113,17 +102,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://web/./css/popnewsletter.css?");
-
-/***/ }),
-
-/***/ "./css/theme.css":
-/*!***********************!*\
-  !*** ./css/theme.css ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://web/./css/theme.css?");
 
 /***/ }),
 
