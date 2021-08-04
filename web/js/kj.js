@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
   \************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"jquery\");\n//link\n$(document).ready(function (e) {\n  // On attend que la page soit chargée\n  $('.obflink').click(function (e) {\n    // On écoute le clic sur un lien obfusqué\n    var t = $(this);\n    var link = atob(t.data('o')); // On décode l'url\n\n    window.location.href = link; // On renvoi l'utilisateur vers la page\n  });\n});\n\n//# sourceURL=webpack://web/./js/megamenu.js?");
+eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"jquery\");\n//link\n$(document).ready(function (e) {\n  // On attend que la page soit chargée\n  $('.obflink').click(function (e) {\n    // On écoute le clic sur un lien obfusqué\n    var t = $(this);\n    var link = atob(t.data('o')); // On décode l'url\n\n    window.location.href = link; // On renvoi l'utilisateur vers la page\n  });\n});\n\nfunction dekstopToMobile() {\n  $(\"*[id^='_desktop_']\").each(function (t, e) {\n    $(\"#\" + e.id.replace(\"_desktop_\", \"_mobile_\")).append($(e).children());\n  });\n}\n\nfunction mobileToDekstop() {\n  $(\"*[id^='_mobile_']\").each(function (t, e) {\n    $(\"#\" + e.id.replace(\"_mobile_\", \"_desktop_\")).append($(e).children());\n  });\n}\n\nfunction changeMobileDekstop() {\n  var width = $(window).width();\n\n  if (width < 768) {\n    dekstopToMobile();\n  } else {\n    mobileToDekstop();\n  }\n}\n\n$(document).ready(function (e) {\n  changeMobileDekstop();\n  $(window).resize(changeMobileDekstop);\n});\n\n//# sourceURL=webpack://web/./js/megamenu.js?");
 
 /***/ }),
 
