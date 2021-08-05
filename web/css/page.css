@@ -21,7 +21,7 @@
     position: absolute;
     top: 45%;
     z-index: 3;
-    left: 50%;
+    left: calc(50% - 72px);
 }
 
 #main .content {
