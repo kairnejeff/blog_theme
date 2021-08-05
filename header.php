@@ -11,7 +11,7 @@ require_once(dirname(__FILE__) . '/../../../../controllers/front/WordpressContro
 
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="shortcut icon" href = "images/favicon.ico">
+    <link rel="shortcut icon" href = "<?php echo get_site_url(); ?>/wp-content/uploads/2021/07/cropped-logo-karine-jeff-small.png">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/../themes/karinejeff/assets/css/theme.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/../themes/karinejeff/assets/css/custom.css" type="text/css" media="all">
 </head>
