@@ -9,6 +9,10 @@ $controllerPrestashop->displayMyfooter();
 ?>
 </footer>
 
+<script>
+var $ = jQuery.noConflict();
+</script>
+<script type="text/javascript" src="<?php echo get_site_url(); ?>/../themes/karinejeff/assets/js/customs.js" ></script>
 <?php
 wp_footer();
 ?>

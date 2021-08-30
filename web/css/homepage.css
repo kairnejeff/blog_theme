@@ -1,6 +1,10 @@
 h1 {
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+#header .header-nav .row .header-bottom .menu>ul>li:last-child a {
+    border-bottom: 1px solid;
 }
 
 .font-roboto {
@@ -51,4 +55,8 @@ h1 {
         max-height: 493.61px;
         object-fit: cover;
     }
+}
+
+#footer .blockreassurance .block-title {
+    text-align: center;
 }

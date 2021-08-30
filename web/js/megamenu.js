@@ -6,3 +6,30 @@ $(document).ready(function(e) { // On attend que la page soit chargée
         window.location.href = link // On renvoi l'utilisateur vers la page
     })
 })
+
+function dekstopToMobile() {
+    $("*[id^='_desktop_']").each(function(t, e) {
+        $("#" + e.id.replace("_desktop_", "_mobile_")).append($(e).children())
+    })
+
+}
+
+function mobileToDekstop() {
+    $("*[id^='_mobile_']").each(function(t, e) {
+        $("#" + e.id.replace("_mobile_", "_desktop_")).append($(e).children())
+    })
+}
+
+function changeMobileDekstop() {
+    var width = $(window).width()
+    if (width < 768) {
+        dekstopToMobile()
+    } else {
+        mobileToDekstop()
+    }
+}
+
+$(document).ready(function(e) {
+    changeMobileDekstop()
+    $(window).resize(changeMobileDekstop)
+})

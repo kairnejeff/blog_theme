@@ -1,10 +1,9 @@
 <?php global $post; ?>
 <?php get_header(); ?>
 <main id="content">
-<section id="main" class="page">
+<section id="wrapper" class="page">
     <div class="container">
         <div class="header-image">
-            <h1 class='page-title'><?php echo $post->post_title ;?></h1>
             <?php 
             if (has_post_thumbnail( $post->ID ) ){
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
@@ -16,7 +15,7 @@
                 echo "</picture></figure></div>";
             }
             ?>
-        
+            <h1 class='page-title'><?php echo $post->post_title ;?></h1>
         </div>
     </div>
 
