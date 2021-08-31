@@ -81,6 +81,14 @@
     user-select: none
 }
 
+.owl-carousel .owl-nav button.owl-prev {
+    left: -60px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -60px;
+}
+
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
@@ -90,14 +98,6 @@
     padding: 0!important;
     font: inherit;
     position: absolute;
-}
-
-.owl-carousel .owl-nav button.owl-prev {
-    left: -60px;
-}
-
-.owl-carousel .owl-nav button.owl-next {
-    right: -60px;
 }
 
 .owl-carousel.owl-loading {
