@@ -38,3 +38,11 @@ main .content {
     line-height: 28px;
     font-family: 'Unna';
 }
+
+#content h2 {
+    font-family: 'RobotoMono';
+    font-size: 18px;
+    word-spacing: 1.8px;
+    text-transform: uppercase;
+    text-align: center;
+}
