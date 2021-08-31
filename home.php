@@ -46,6 +46,7 @@
                     $p = get_posts($args);
                     foreach($p as  $post){
                         echo "<div class='slide-item recent-posts'>";
+                        echo '<a href="' . get_post_permalink( $post->ID ) . '">';
                         if (has_post_thumbnail( $post->ID ) ){
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),'large');
                             $url =str_replace("/uploads","/webp-express/webp-images/uploads",$image[0]);
@@ -56,7 +57,7 @@
                             echo "</picture></figure></div>";
                         }
                         echo "<div class='slide-text'>";
-                        echo '<a href="' . get_post_permalink( $post->ID ) . '"><h3 class="category-title">'.$post->post_title."</h3></a>";
+                        echo '<h3 class="category-title">'.$post->post_title."</h3>";
                         
                         if ($lecture=get_field('temps_lecture', 'post_'.$post->ID)) {
                             if($lecture==1){
@@ -67,7 +68,7 @@
                             
                         }
                         echo "</div>";
-                        echo "</div>";
+                        echo "</a></div>";
                     }
                 ?>
                 
@@ -94,6 +95,7 @@
                 echo "<div class=\"kj-slide owl-carousel\">";
                 foreach($posts as  $post){
                     echo "<div class='slide-item recent-posts'>";
+                    echo '<a href="' . get_post_permalink( $post->ID ) . '">';
                     if (has_post_thumbnail( $post->ID ) ){
                         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                         $url =str_replace("/uploads","/webp-express/webp-images/uploads",$image[0]);
@@ -104,7 +106,7 @@
                         echo "</picture></figure></div>";
                     }
                     echo "<div class='slide-text'>";
-                    echo '<a href="' . get_post_permalink( $post->ID ) . '"><h3 class="category-title">'.$post->post_title."</h3></a>";
+                    echo '<h3 class="category-title">'.$post->post_title."</h3>";
                     
                     if ($lecture=get_field('temps_lecture', 'post_'.$post->ID)) {
                         if($lecture==1){
@@ -115,7 +117,7 @@
                         
                     }
                     echo "</div>";
-                    echo "</div>";
+                    echo "</a></div>";
 
                 }
                 echo "</div>";
