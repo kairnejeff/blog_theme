@@ -88,7 +88,16 @@
     color: inherit;
     border: none;
     padding: 0!important;
-    font: inherit
+    font: inherit;
+    position: absolute;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -60px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -60px;
 }
 
 .owl-carousel.owl-loading {
