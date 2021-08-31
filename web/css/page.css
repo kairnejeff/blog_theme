@@ -24,7 +24,7 @@
     left: calc(50% - 72px);
 }
 
-#main .content {
+main .content {
     margin-top: 2rem;
     margin-bottom: 6em;
 }
@@ -36,14 +36,4 @@
 #content {
     font-size: 21px;
     line-height: 24px;
-}
-
-#content h2,
-#content h3 {
-    font-family: 'RobotoMono';
-    font-size: 18px;
-    line-height: 1.8px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
