@@ -222,6 +222,12 @@
     background: #fef9f5;
 }
 
+@media (min-width: 1679px) and (max-width: 2560px) {
+    .kj-slide .slide-item {
+        height: 500px;
+    }
+}
+
 .kj-slide .slide-image-wrapper {
     overflow: hidden;
 }
