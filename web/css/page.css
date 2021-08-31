@@ -35,5 +35,6 @@ main .content {
 
 #content {
     font-size: 21px;
-    line-height: 24px;
+    line-height: 28px;
+    font-family: 'Unna';
 }
