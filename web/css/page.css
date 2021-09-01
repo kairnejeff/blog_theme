@@ -24,7 +24,7 @@
     left: calc(50% - 72px);
 }
 
-#main .content {
+main .content {
     margin-top: 2rem;
     margin-bottom: 6em;
 }
@@ -35,15 +35,16 @@
 
 #content {
     font-size: 21px;
-    line-height: 24px;
+    line-height: 28px;
+    font-family: 'Unna';
 }
 
-#content h2,
-#content h3 {
+#content h2 {
     font-family: 'RobotoMono';
     font-size: 18px;
-    line-height: 1.8px;
+    word-spacing: 1.8px;
+    text-transform: uppercase;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
