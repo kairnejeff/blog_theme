@@ -227,22 +227,27 @@
     overflow: hidden;
 }
 
+.kj-slide .slide-image-wrapper figure {
+    margin: 0;
+}
+
 .kj-slide .slide-image-wrapper img.slide-img {
     width: 100%;
-    max-height: 350px;
+    height: 242px;
     object-fit: cover
 }
 
 .kj-slide .slide-text {
-    padding: 2rem;
+    padding: 36px 0 65px 28px;
 }
 
-.kj-slide .slide-text.hover h3{
+.kj-slide .slide-text.hover h3 {
     color: #fff;
 }
 
 .kj-slide .slide-text h3 {
     font-size: 21px;
+    text-transform: capitalize;
 }
 
 .kj-slide .owl-stage-outer {
@@ -294,9 +299,9 @@
 }
 
 .kj-slide .owl-item .slide-item .slide-text .post-minute {
-    
-    bottom: 0;
+    bottom: 23px;
     position: absolute;
+    margin: unset;
 }
 
 .kj-slide .owl-item .slide-item .slide-text.hover {
