@@ -15,15 +15,24 @@ h1 {
     letter-spacing: 1.3px;
 }
 
+.container.home-page-block:first-child {
+    margin-bottom: 86px;
+}
+
 .container.home-page-block {
-    margin-bottom: 3rem;
+    margin-bottom: 100px;
 }
 
 .home-page-block h2,
 .block-title h2 {
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    font-family: 'RobotoMono';
+    text-transform: uppercase;
+
 }
 
 .header-nav .container {

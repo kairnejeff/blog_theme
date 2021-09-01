@@ -220,6 +220,7 @@
     height: 400px;
     border-radius: 3px;
     background: #fef9f5;
+    position: relative;
 }
 
 .kj-slide .slide-image-wrapper {
@@ -291,6 +292,7 @@
 .kj-slide .owl-item .slide-item .slide-text .post-minute {
     
     bottom: 0;
+    position: absolute;
 }
 
 .kj-slide .owl-item .slide-item .slide-text.hover {
