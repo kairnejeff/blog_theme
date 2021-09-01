@@ -241,6 +241,10 @@
     padding: 36px 0 65px 28px;
 }
 
+.kj-slide .slide-text.hover {
+    padding: unset;
+}
+
 .kj-slide .slide-text.hover h3 {
     color: #fff;
 }
