@@ -19,6 +19,10 @@ h1 {
     margin-bottom: 86px;
 }
 
+.container.home-page-block:last-child {
+    margin-bottom: 140px;
+}
+
 .container.home-page-block {
     margin-bottom: 100px;
 }
