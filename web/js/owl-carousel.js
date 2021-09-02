@@ -2,7 +2,7 @@ $(function() {
     $('.kj-slide').owlCarousel({
         nav: true,
         //loop:true,
-        margin: 40,
+        margin: 30,
         slideBy: 'page',
         rewind: false,
         responsive: {
