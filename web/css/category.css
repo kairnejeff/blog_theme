@@ -1,0 +1,30 @@
+.category-blog h1 {
+    text-align: center;
+}
+
+.category-blog .kj-slide {
+    margin-top: 60px;
+}
+
+.owl-dots,
+.category-blog .kj-slide .owl-nav {
+    display: none;
+}
+
+.category-blog .kj-slide .owl-stage {
+    width: 100%!important;
+}
+
+.category-blog .kj-slide .owl-stage .owl-item {
+    margin-right: 20px!important;
+    margin-bottom: 30px;
+}
+
+.category-blog .kj-slide .owl-stage .owl-item .slide-item {
+    height: 397px;
+}
+
+.category-blog .kj-slide .owl-stage .owl-item .slide-item .slide-text:hover {
+    color: #fff;
+}
+
