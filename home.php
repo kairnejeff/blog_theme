@@ -85,6 +85,7 @@
                 'exclude' =>1
             );
             $c = get_categories($args);
+            echo "<div class=\"block-category\">";
             echo "<div class=\"container home-page-block\">";
             echo "<div class=\"kj-slide owl-carousel\">";
             foreach($c as  $cat){
@@ -135,6 +136,7 @@
                 echo "</div>";
             }
 
+            echo "</div>";
             echo "</div>";
             echo "</div>";
         ?>
