@@ -32,7 +32,8 @@
                 <?php endif; ?>
             </div>
         </div>
-      
+
+        <div class="block-category">
             <div class="container home-page-block">
                 <h2 class="block-title">Catégories</h2>
                 <div class="kj-slide owl-carousel">
@@ -85,7 +86,6 @@
                 'exclude' =>1
             );
             $c = get_categories($args);
-            echo "<div class=\"block-category\">";
             echo "<div class=\"container home-page-block\">";
             echo "<div class=\"kj-slide owl-carousel\">";
             foreach($c as  $cat){
@@ -138,9 +138,8 @@
 
             echo "</div>";
             echo "</div>";
-            echo "</div>";
         ?>
-            
+    </div>
 
 </section>
 
