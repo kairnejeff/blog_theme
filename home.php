@@ -33,7 +33,6 @@
             </div>
         </div>
       
-        <div class="block-category">
             <div class="container home-page-block">
                 <h2 class="block-title">Catégories</h2>
                 <div class="kj-slide owl-carousel">
@@ -75,7 +74,7 @@
                     
                 </div>
             </div>
-        </div>
+     
         
         
         
