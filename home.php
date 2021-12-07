@@ -32,48 +32,50 @@
                 <?php endif; ?>
             </div>
         </div>
-        
-        <div class="container home-page-block">
-            <h2 class="block-title">Dernières Histoires</h2>
-            <div class="kj-slide owl-carousel">
-                <?php 
-                    $args = array(
-                        'numberposts'      => 15,
-                        'orderby'          => 'date',
-                        'order'            => 'DESC',
-                        'post_type'        => 'post',
-                    );
-                    $p = get_posts($args);
-                    foreach($p as  $post){
-                        echo "<div class='slide-item recent-posts'>";
-                        echo '<a href="' . get_post_permalink( $post->ID ) . '">';
-                        if (has_post_thumbnail( $post->ID ) ){
-                            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),'large');
-                            $url =str_replace("/uploads","/webp-express/webp-images/uploads",$image[0]);
-                            $webp=$url.".webp";
-                            echo "<div class='slide-image-wrapper'><figure><picture>";
-                            echo "<source srcset=\"$webp\"  type='image/webp'>";
-                            echo "<img src='\"$image[0]\"' class='slide-img'>";
-                            echo "</picture></figure></div>";
-                        }
-                        echo "<div class='slide-text'>";
-                        echo '<h3 class="category-title">'.$post->post_title."</h3>";
-                        
-                        if ($lecture=get_field('temps_lecture', 'post_'.$post->ID)) {
-                            if($lecture==1){
-                                echo "<p class='post-minute font-roboto'>".$lecture." minute de lecture</p>";
-                            }else{
-                                echo "<p class='post-minute font-roboto'>".$lecture." minutes de lecture</p>";
+      
+        <div class="block-category">
+            <div class="container home-page-block">
+                <h2 class="block-title">Catégories</h2>
+                <div class="kj-slide owl-carousel">
+                    <?php 
+                        $args = array(
+                            'numberposts'      => 15,
+                            'orderby'          => 'date',
+                            'order'            => 'DESC',
+                            'post_type'        => 'post',
+                        );
+                        $p = get_posts($args);
+                        foreach($p as  $post){
+                            echo "<div class='slide-item recent-posts'>";
+                            echo '<a href="' . get_post_permalink( $post->ID ) . '">';
+                            if (has_post_thumbnail( $post->ID ) ){
+                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),'large');
+                                $url =str_replace("/uploads","/webp-express/webp-images/uploads",$image[0]);
+                                $webp=$url.".webp";
+                                echo "<div class='slide-image-wrapper'><figure><picture>";
+                                echo "<source srcset=\"$webp\"  type='image/webp'>";
+                                echo "<img src='\"$image[0]\"' class='slide-img'>";
+                                echo "</picture></figure></div>";
                             }
+                            echo "<div class='slide-text'>";
+                            echo '<h3 class="category-title">'.$post->post_title."</h3>";
                             
+                            if ($lecture=get_field('temps_lecture', 'post_'.$post->ID)) {
+                                if($lecture==1){
+                                    echo "<p class='post-minute font-roboto'>".$lecture." minute de lecture</p>";
+                                }else{
+                                    echo "<p class='post-minute font-roboto'>".$lecture." minutes de lecture</p>";
+                                }
+                                
+                            }
+                            echo "</div>";
+                            echo "</a></div>";
                         }
-                        echo "</div>";
-                        echo "</a></div>";
-                    }
-                ?>
-                
-			</div>
-		</div>
+                    ?>
+                    
+                </div>
+            </div>
+        </div>
         
         
         
